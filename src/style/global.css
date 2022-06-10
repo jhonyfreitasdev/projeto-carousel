@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+.container{
+    position: relative;
+}
+
+.fundo{
+    position: relative;
+    display: none;
+    height: 100vh;
+}
+
+.informacoes{
+    background-color: white;
+    width: 490px;
+    height: 500px;
+    left: 13%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 65px 60px;
+    border-radius: 10px;
+}
+
+.informacoes .titulo{
+    font-size: 47px;
+    margin-bottom: 65px;
+    font-weight: 400;
+}
+
+.informacoes .texto{
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.informacoes a{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.fundo#primeiro{
+    background: url("../image/cerejeira.png") no-repeat center center;
+    background-size: cover;
+}
+
+.fundo#primeiro .informacoes a{
+    color: #C50000;
+}
+
+.fundo#segundo{
+    background: url("../image/flor-amarela.png") no-repeat center center;
+    background-size: cover;
+}
+
+.fundo#segundo .informacoes a{
+    color: #D9DD10;
+}
+
+.fundo#terceiro{
+    background: url("../image/montanhas.png") no-repeat center center;
+    background-size: cover;
+}
+
+.fundo#terceiro .informacoes a{
+    color: #A63A17;
+}
+
+.fundo#quarto{
+    background: url("../image/lago.png") no-repeat center center;
+    background-size: cover;
+}
+
+.fundo#quarto .informacoes a{
+    color: #10ACDD;
+}
+
+.seta{
+    width: 49px;
+    height: 78px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.seta.esquerda{
+    left: 4%;
+}
+
+.seta.direita{
+    right: 4%;
+}
+
+.mostrar-fundo{
+    display: block;
+}
+
+.desabilitar-seta{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
