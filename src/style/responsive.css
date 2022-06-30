@@ -1,0 +1,44 @@
+@media (max-width:745px) {
+    .informacoes{
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+    }
+
+    .informacoes .titulo {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .informacoes .texto{
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .seta{
+        width: 30px;
+
+    }
+}
+
+@media (max-width:475px){
+    .informacoes{
+        width: 250px;
+        height: auto;
+        padding: 25px;
+    }
+
+    .informacoes .titulo{
+        font-size: 28px;
+    }
+
+    .informacoes a{
+        font-size: 25px;
+    }
+
+    .seta{
+        width: 26px;
+        height: 30px;
+    }
+}
