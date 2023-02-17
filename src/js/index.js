@@ -1,42 +1,37 @@
-let setaAvancar = document.getElementById("avancar");  
-let setaVoltar = document.getElementById("voltar");
-let listaDeFundos = document.getElementsByClassName("fundo");
-let fundoAtual = 0;
-let fundoAnterior = 0;
-
-
+const setaAvancar = document.getElementById("avancar");  
+const setaVoltar = document.getElementById("voltar");
+const listaDeFundos = document.querySelectorAll(".fundo");
+let controleFundoAtual = 0;
 
 setaAvancar.addEventListener('click', function(){
-    fundoAnterior = fundoAtual;
-    fundoAtual ++;
+    controleFundoAtual ++;
 
-    mostrarFundo();    
-    esconderFundo();
+    trocarSlider();  
     desabilitarSeta();
 })
 
 setaVoltar.addEventListener('click', function(){
-    fundoAnterior = fundoAtual;
-    fundoAtual --;
+    controleFundoAtual --;
 
-    mostrarFundo();
-    esconderFundo();
+    trocarSlider();
     desabilitarSeta();
 });
 
-function mostrarFundo() {
-    listaDeFundos[fundoAtual].classList.add("mostrar-fundo");
-}
+function trocarSlider(){
+    listaDeFundos.forEach(fundo =>{
+        if (fundo.classList.value === 'fundo mostrar-fundo') {
+            fundo.classList.remove('mostrar-fundo')
+        }
+    })
 
-function esconderFundo(){
-    listaDeFundos[fundoAnterior].classList.remove('mostrar-fundo');
+    listaDeFundos[controleFundoAtual].classList.add("mostrar-fundo");
 }
 
 function desabilitarSeta(){
     const primeiroFundo = 0;
     const ultimoFundo = listaDeFundos.length -1;
 
-    fundoAtual === primeiroFundo ? setaVoltar.classList.add('desabilitar-seta') : setaVoltar.classList.remove('desabilitar-seta');
+    controleFundoAtual === primeiroFundo ? setaVoltar.classList.add('desabilitar-seta') : setaVoltar.classList.remove('desabilitar-seta');
 
-    fundoAtual === ultimoFundo ? setaAvancar.classList.add('desabilitar-seta') : setaAvancar.classList.remove('desabilitar-seta');
+    controleFundoAtual === ultimoFundo ? setaAvancar.classList.add('desabilitar-seta') : setaAvancar.classList.remove('desabilitar-seta');
 }

@@ -4,12 +4,10 @@
         height: 300px;
         padding: 30px;
     }
-
     .informacoes .titulo {
         font-size: 30px;
         margin-bottom: 30px;
     }
-
     .informacoes .texto{
         font-size: 15px;
         font-weight: 300;
@@ -28,11 +26,9 @@
         height: auto;
         padding: 25px;
     }
-
     .informacoes .titulo{
         font-size: 28px;
     }
-
     .informacoes a{
         font-size: 25px;
     }

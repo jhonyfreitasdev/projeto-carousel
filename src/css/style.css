@@ -21,56 +21,49 @@
     padding: 65px 60px;
     border-radius: 10px;
 }
-
 .informacoes .titulo{
     font-size: 40px;
     margin-bottom: 65px;
     font-weight: 400;
 }
-
 .informacoes .texto{
     font-size: 20px;
     margin-bottom: 35px;
     font-weight: 300;
 }
-
 .informacoes a{
     font-size: 28px;
     font-weight: 700;
 }
 
 .fundo#primeiro{
-    background: url("../image/cerejeira.png") no-repeat center center;
+    background: url("../images/cerejeira.png") no-repeat center center;
     background-size: cover;
 }
-
 .fundo#primeiro .informacoes a{
     color: #C50000;
 }
 
 .fundo#segundo{
-    background: url("../image/flor-amarela.png") no-repeat center center;
+    background: url("../images/flor-amarela.png") no-repeat center center;
     background-size: cover;
 }
-
 .fundo#segundo .informacoes a{
     color: #D9DD10;
 }
 
 .fundo#terceiro{
-    background: url("../image/montanhas.png") no-repeat center center;
+    background: url("../images/montanhas.png") no-repeat center center;
     background-size: cover;
 }
-
 .fundo#terceiro .informacoes a{
     color: #A63A17;
 }
 
 .fundo#quarto{
-    background: url("../image/lago.png") no-repeat center center;
+    background: url("../images/lago.png") no-repeat center center;
     background-size: cover;
 }
-
 .fundo#quarto .informacoes a{
     color: #10ACDD;
 }
@@ -82,11 +75,9 @@
     top: 50%;
     transform: translateY(-50%);
 }
-
 .seta.esquerda{
     left: 4%;
 }
-
 .seta.direita{
     right: 4%;
 }
@@ -99,4 +90,3 @@
     opacity: 0.5;
     pointer-events: none;
 }
-
