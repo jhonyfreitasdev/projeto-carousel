@@ -5,7 +5,7 @@ Projeto de um carousel de imagens, que troca tanto as imagens quanto a seção d
 ## 🔗 Acesso ao projeto
 <a href="https://jhonyfreitasdev.github.io/projeto-carousel/">Clique aqui para ir para a página</a>
 
-[<img src="src/image/projeto-carousel.gif">](https://jhonyfreitasdev.github.io/projeto-carousel/)
+[<img src="src/images/projeto-carousel.gif">](https://jhonyfreitasdev.github.io/projeto-carousel/)
 
 
 ## 🛠 Skills
